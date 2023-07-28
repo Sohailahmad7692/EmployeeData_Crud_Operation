@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="container">
+        <div id="employeeList">
+          <h1 style="font-size: 15px; padding: 10px;">Employee Name</h1>
+          <ul id="nameList"></ul>
+        </div>
+        <div id="employeeDetail">
+          <h1 style="font-size: 15px; padding: 10px;">Employee Detail</h1>
+          <div id="ShowInfohere">Heelo</div>
+        </div>
+        <div style="position: absolute; right: 0px; top: -20px;">
+          <button id="addAMember">Add a member</button>
+        </div>
+      </div>
+      <div id="formContainer">
+        <form action="EmployeeData.js">
+          <label for="Name"> Name</label>
+          <input type="text" id="employeeName" /> <br /><br />
+          <label for="Email"> Email</label>
+          <input type="email" id="employeeEmail" /> <br /><br />
+          <label for="Dob"> DOB</label>
+          <input type="date" id="employeeDob" /> <br /><br />
+          <label for="Department">Department</label>
+          <input type="text" id="employeeDepartment" /> <br /><br />
+          <label for="EmployeeId"> Id</label>
+          <input type="number" id="employeeId" /> <br /><br />
+          <button type="submit" onclick="addAMember" id="submitButton">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
